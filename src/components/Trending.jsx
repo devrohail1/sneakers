@@ -4,12 +4,13 @@ import ProductCard from "./ProductCard";
 function Trending() {
   return (
     <div className="grid grid-cols-12">
-      <div className="col-start-1 col-span-12 md:col-start-2 md:col-span-9">
-        <div className=" mt-5">
+      <div className="col-start-2 col-span-12 md:col-start-2 md:col-span-10">
+        <div className="mt-5">
           <div>
             <h2 className="font-semibold text-lg">Trending Products</h2>
           </div>
-          <div className="flex flex-col md:flex-row items-center gap-6 ">
+          {/* Grid Layout for Products */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4 sm:ml-10">
             <ProductCard
               img="/images/nikeprod.png"
               heading="Nike Joggers"
